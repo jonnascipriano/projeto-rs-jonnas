@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+}
+
+:root{
+    --text-color: white;
+    --bg-url: url(assets/bg-mobile.jpg);
+    --borda-color: rgba(255,255,255, 0.5)
+    --surface-color: rgba(255,255,255,0.05);
+    --surface-color-hover: rgba(0,0,0,0.02)
+}
+
+.light{
+    --text-color: black;
+    --bg-url: url(assets/bg-mobile-light.jpg);
+    --borda-color: rgba(0,0,0, 0.5);
+    --surface-color: rgba(0,0,0,0.05);
+    --surface-color-hover: rgba(0,0,0,0.02)
+
+}
+
+body{
+    /* background: url(assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; */
+
+    /* shorthand/atalho */
+    /* background: color image repeat position/size*/
+
+    background: var(--bg-url) no-repeat top center/cover;
+    
+}
+
+main{
+    width: 360px;
+    height: 712px;
+    margin: 56px auto 0 auto;
+    padding: 0 24px;
+}
+
+#profile{
+    text-align: center;
+    padding: 24px;
+    margin-top: 8px;
+}
+
+#profile img{
+    width: 112px;
+}
+
+#profile p{
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* Link */
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px 0;
+
+}
+
+ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 24px;
+
+    background: var(--surface-color);
+    border: 1px solid var(--borda-color);
+    border-radius: 5px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+    transition: background .3s;
+}
+
+/* pseudo-selector */
+ul li a:hover{
+    border: 1.5px solid white;
+    background: var(--surface-color-hover);
+
+}
+
+#social-links{
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+#social-links a:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+}
