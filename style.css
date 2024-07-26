@@ -84,6 +84,8 @@ main{
     transform: translateY(-50%);
     z-index: 1;
     cursor: pointer;
+    animation: slide-out .4s;
+    animation-fill-mode: forwards;
 }
 
 #switch span{
@@ -98,8 +100,8 @@ main{
 }
 
 .light #switch button{
-    right: 0;
-    left: initial;
+    animation: slide-in .4s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -167,4 +169,25 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+
+@keyframes slide-in {
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from{
+        left: 50%;
+    }
+
+    to{
+        left: 0%;
+    }
 }
