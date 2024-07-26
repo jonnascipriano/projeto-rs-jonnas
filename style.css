@@ -88,6 +88,11 @@ main{
     animation-fill-mode: forwards;
 }
 
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
+    transition: .4s;
+}
+
 #switch span{
     display: block;
     width: 64px;
