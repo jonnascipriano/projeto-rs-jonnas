@@ -38,13 +38,13 @@ body{
     /* shorthand/atalho */
     /* background: color image repeat position/size*/
 
-    background: var(--bg-url) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center;
+    background-size: 110%;
     transition: 2s;
 }
 
 main{
     width: 360px;
-    height: 712px;
     margin: 56px auto 0 auto;
     padding: 0 24px;
 }
