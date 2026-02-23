@@ -26,6 +26,7 @@
     --highlight-color: rgba(0,0,0,0.1);
     --switch-bg-url: url(assets/sun.svg);
     --background-icon: #e9d901;
+    transition: 2s;
 }
 
 body{
@@ -38,7 +39,7 @@ body{
     /* background: color image repeat position/size*/
 
     background: var(--bg-url) no-repeat top center/cover;
-    
+    transition: 2s;
 }
 
 main{
