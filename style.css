@@ -39,7 +39,8 @@ body{
     /* background: color image repeat position/size*/
 
     background: var(--bg-url) no-repeat top center;
-    background-size: 110%;
+    background-size: cover;
+    min-height: 100vh;
     transition: 2s;
 }
 
